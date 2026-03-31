@@ -1,0 +1,233 @@
+html {
+    font-family: 'Times New Roman';
+    scroll-behavior:smooth;
+    margin: 0;
+    padding: 0;
+    color:#606c38
+}
+body {
+    margin: 0;
+    background-color: #000;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+header img {
+    height: 40px;
+    width: auto;
+}
+nav a {
+    padding: 8px 16px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #606c38;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+nav a:hover {
+    background-color: rgba(96, 108, 56, 0.1);
+    color: #283618;
+    text-decoration: none;
+    font-weight: 900;
+    text-decoration: underline;
+}
+.home {
+    height: 125%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), 
+                url("ChatGPT.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.deschome {
+    max-width: 500px;
+    margin-left: 5%;
+    color: white;
+}
+.deschome h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.deschome a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background: #606c38;
+    padding: 15px 40px;
+    font-weight: 800;
+    transition: 0.3s;
+    border-radius: 12px 12px 12px 12px;
+}
+.deschome a:hover {
+    background: #656d4a;
+}
+section {
+    padding: 100px 0;
+    min-height: 75vh;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 10% 80px 10%;
+    background-color: #4c8934;
+    gap: 80px;
+}
+.image-side {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.image-side img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    filter: drop-shadow(0 20px 50px rgba(0,0,0,0.08)); 
+}
+.text-side {
+    flex: 1;
+    text-align: left;
+}
+.text-side h2 {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: hsl(60, 11%, 98%);
+    margin-bottom: 10px;
+}
+.text-side h1 {
+    font-size: 48px;
+    color: #ffffff;
+    margin: 0 0 25px 0;
+    line-height: 1.1;
+}
+.text-side p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.tutorial {
+    padding: 100px 10%;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+.desctutorial {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.desctutorial h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.desctutorial ol {
+    display: inline-block;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 2.2;
+    font-weight: 600;
+    color: #606c38;
+}
+.profile {
+    padding: 100px 10%;
+    background-color: hwb(97 14% 59%);
+}
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.profile-image {
+    flex: 1;
+}
+.profile-image img {
+    width: 100%;
+    max-width: 400px;
+    border-bottom: 7.5px solid hsl(0, 0%, 100%);
+}
+.profile-text {
+    flex: 1.2;
+}
+.profile-text h2 {
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 10px;
+}
+.profile-text h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    color:#ffffff;
+}
+.profile-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 40px;
+}
+.specs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+}
+.spec-item span {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.spec-item p {
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+}
+.connect-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.connect-links a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.connect-links a:hover {
+    color: oklab(100% 0 -0.00011);
+    padding-left: 5px;
+}
+.connect-links i {
+    font-size: 16px;
+    width: 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+
+
+
